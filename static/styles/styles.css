@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+.scene-nav-info {
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: slategrey;
+    opacity: 0.7;
+    font-size: 10px;
+    }
+
+    .scene-tooltip {
+    color: lavender;
+    font-size: 15px;
+    }
+
+    .scene-nav-info, .scene-tooltip {
+    position: absolute;
+    font-family: sans-serif;
+    pointer-events: none;
+    }
+
+.infoTitle{
+    margin-top:50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 48px;
+    color:white;
+    z-index: 9;
+    left:45%;
+    right:45%;
+    position: absolute;
+    width:300px;
+
+  }
+.infobox {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 34px;
+    color:white;
+    background-color: #000;
+    z-index: 9;
+    margin-top:50px;
+    position: absolute;
+    border: 0px;
+    margin-left: 100px;;
+    width: 500px;
+    padding: 10px;
+    opacity: .7;
+      
+    }
+
+.datatable {
+    text-align:left;
+    font-family: 'Ubuntu', sans-serif;
+    padding:0;
+    font-size: 14px;
+    border-collapse: collapse; 
+    color:white;
+    z-index: 9;
+    margin-top:50px;
+    position: absolute;
+    border: 1px black solid ;
+    right:5%;;
+    width: 500px;
+    padding: 10px;
+    opacity: .6;
+    background:black;
+    Overflow-y:scroll;
+    height:400px;
+
+}
+.datatable th {
+    text-align:left;
+    align:left;
+    color:orange;
+}
+.chartbox {
+
+font-family: 'Ubuntu', sans-serif;
+font-size: 16px;
+color:white;
+background-color: #000;
+z-index: 9;
+margin-top:250px;
+position: absolute;
+margin-left: 100px;
+opacity: .6;
+padding:10px;
+
+}
+   

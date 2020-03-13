@@ -1,0 +1,43 @@
+<html>
+<head>
+  <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/three-trackballcontrols-web/dist/three-trackballcontrols.min.js"></script>
+  <script src="//unpkg.com/three-globe"></script>
+  <script src="//cdn.jsdelivr.net/npm/d3"></script>
+  <script src="//cdn.jsdelivr.net/npm/d3-dsv"></script>
+  <script src="//cdn.jsdelivr.net/npm/globe.gl"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <link type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+<body>
+<div class="infoTitle">COVID-19</div>
+
+  <div class="infobox">
+      <div id="typed-strings">
+        <p id="summary"></p>
+      </div>
+      <span id="typed"></span>
+     
+  </div>
+  <div id="chartContainer" class="chartbox" style="height: 300px; width: 450px;"></div>
+ 
+
+  {% for row in tables  %}
+        {{titles[loop.index]}}
+        {{ row|safe }}
+  {% endfor %}
+
+  
+  <div id="globeViz" style="height:100%;position: absolute;"></div>
+  
+
+  
+   
+  <script src="{{ url_for('static',filename='js/script.js') }}"></script>     
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</body>
+</html>
